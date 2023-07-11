@@ -1,0 +1,36 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "lint": "eslint src --ext .ts --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^1.2.0",
+    "@types/node": "^20.4.0",
+    "dotenv": "^16.3.1",
+    "eslint": "8.39.0",
+    "prisma": "^4.16.2",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@fastify/cors": "^8.3.0",
+    "@fastify/jwt": "^7.2.0",
+    "@fastify/multipart": "^7.7.0",
+    "@fastify/static": "^6.10.2",
+    "@prisma/client": "^4.16.2",
+    "axios": "^1.4.0",
+    "eslint-config-prettier": "8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "fastify": "^4.19.2",
+    "prettier": "^2.8.8",
+    "tsc": "^2.0.4",
+    "tsx": "^3.12.7",
+    "zod": "^3.21.4"
+  }
+}
