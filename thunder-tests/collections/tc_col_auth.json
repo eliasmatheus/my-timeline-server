@@ -1,0 +1,28 @@
+{
+    "_id": "d213e423-3abf-4e4a-9714-95e6f4e1fd41",
+    "colName": "Auth",
+    "created": "2023-07-10T19:47:51.030Z",
+    "sortNum": 20000,
+    "folders": [],
+    "requests": [
+        {
+            "_id": "5a009c5c-724b-4333-a15e-5ef77ab315e6",
+            "colId": "d213e423-3abf-4e4a-9714-95e6f4e1fd41",
+            "containerId": "",
+            "name": "{{HOST}}/register",
+            "url": "{{HOST}}/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-07-10T20:06:13.410Z",
+            "modified": "2023-07-10T20:06:22.146Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"code\": \"9f6c477154b8a7122290\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

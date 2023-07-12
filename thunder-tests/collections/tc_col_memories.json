@@ -1,0 +1,120 @@
+{
+    "_id": "671a73b9-34c8-479f-9ccb-ac462a343fda",
+    "colName": "Memories",
+    "created": "2023-07-07T17:24:51.295Z",
+    "sortNum": 10000,
+    "folders": [],
+    "requests": [
+        {
+            "_id": "ca78f5ce-fb46-4502-84b8-108ef01f65d9",
+            "colId": "671a73b9-34c8-479f-9ccb-ac462a343fda",
+            "containerId": "",
+            "name": "GET Memories",
+            "url": "{{HOST}}/memories",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-07-07T17:24:51.296Z",
+            "modified": "2023-07-07T17:24:51.296Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "dcbd4425-2b9c-430a-ab16-e94acf0d1443",
+            "colId": "671a73b9-34c8-479f-9ccb-ac462a343fda",
+            "containerId": "",
+            "name": "POST Memory",
+            "url": "{{HOST}}/memories",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-07-07T17:28:28.645Z",
+            "modified": "2023-07-12T21:46:49.121Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"content\": \"test\",\n  \"coverUrl\": \"https://github.com/eliasmatheus.png\",\n  \"isPublic\": 1,\n   \"date\": \"2023-06-05\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "19158098-eef6-40a9-a3fe-752b43236090",
+            "colId": "671a73b9-34c8-479f-9ccb-ac462a343fda",
+            "containerId": "",
+            "name": "GET Memory",
+            "url": "{{HOST}}/memories",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2023-07-07T17:34:10.624Z",
+            "modified": "2023-07-07T17:34:10.624Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e9866a45-8946-4ad1-989b-2448dcb63032",
+            "colId": "671a73b9-34c8-479f-9ccb-ac462a343fda",
+            "containerId": "",
+            "name": "PUT Memory",
+            "url": "{{HOST}}/memories/2cbb9d04-f2bb-4340-91f9-a0a390d20584",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-07-07T17:38:58.321Z",
+            "modified": "2023-07-12T21:46:46.230Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"content\": \"oiiiii\",\n  \"coverUrl\": \"https://github.com/eliasmatheus.png\",\n  \"isPublic\": 1,\n  \"date\": \"2023-06-05\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1a73b25d-bdf4-49e0-8feb-d1df08a77845",
+            "colId": "671a73b9-34c8-479f-9ccb-ac462a343fda",
+            "containerId": "",
+            "name": "DELETE Memory",
+            "url": "{{HOST}}/memories/2cbb9d04-f2bb-4340-91f9-a0a390d20584",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-07-07T17:40:28.354Z",
+            "modified": "2023-07-07T17:40:56.925Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2ab0217f-cb65-4e72-b807-faac33fba9cd",
+            "colId": "671a73b9-34c8-479f-9ccb-ac462a343fda",
+            "containerId": "",
+            "name": "POST Upload",
+            "url": "{{HOST}}/upload",
+            "method": "POST",
+            "sortNum": 25000,
+            "created": "2023-07-10T22:37:43.092Z",
+            "modified": "2023-07-10T22:39:20.738Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [],
+                "files": [
+                    {
+                        "name": "file",
+                        "value": "../../../../../../Desktop/timeline/IMG_8463.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "auth": {
+            "type": "bearer",
+            "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRWxpYXMgTWF0aGV1cyBPbGl2ZWlyYSIsImF2YXRhclVybCI6Imh0dHBzOi8vYXZhdGFycy5naXRodWJ1c2VyY29udGVudC5jb20vdS81NDcyODE3OT92PTQiLCJzdWIiOiJiMDIwMDIwZC04ZmQ0LTQ1ZjYtOWE1Mi0wNzdmYmI0ZTFkMDkiLCJpYXQiOjE2ODkwMzczNDYsImV4cCI6MTY5MTYyOTM0Nn0.ZbLMZT9HosVQBUn__tXo5STmUhUY8M0AGoDuUxugalc"
+        }
+    }
+}
