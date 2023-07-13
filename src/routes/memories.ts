@@ -1,8 +1,11 @@
 import { FastifyInstance } from "fastify";
 import { prisma } from "../lib/prisma";
 import { z } from "zod";
+import { UploadService } from "../services/UploadsService";
 
 export async function memoriesRoutes(app: FastifyInstance) {
+  const uploadService = new UploadService();
+
   app.addHook("preHandler", async (req, res) => {
     await req.jwtVerify();
   });
@@ -96,6 +99,10 @@ export async function memoriesRoutes(app: FastifyInstance) {
       return res.status(401).send();
     }
 
+    if (memory.coverUrl !== coverUrl) {
+      uploadService.deleteCoverUrlFile(memory.coverUrl);
+    }
+
     memory = await prisma.memory.update({
       where: {
         id,
@@ -128,10 +135,14 @@ export async function memoriesRoutes(app: FastifyInstance) {
       return res.status(401).send();
     }
 
-    await prisma.memory.delete({
-      where: {
-        id,
-      },
-    });
+    await prisma.memory
+      .delete({
+        where: {
+          id,
+        },
+      })
+      .then(() => {
+        uploadService.deleteCoverUrlFile(memory.coverUrl);
+      });
   });
 }
