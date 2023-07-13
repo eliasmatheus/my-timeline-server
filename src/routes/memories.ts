@@ -54,7 +54,7 @@ export async function memoriesRoutes(app: FastifyInstance) {
     const bodySchema = z.object({
       content: z.string(),
       coverUrl: z.string(),
-      date: z.date(),
+      date: z.coerce.date(),
       isPublic: z.coerce.boolean().default(false),
     });
 
