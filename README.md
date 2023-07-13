@@ -95,3 +95,9 @@ A variável `DATABASE_URL` já vem preenchida com o endereço do banco de dados 
 ### Rodando o frontend
 
 Para rodar a interface web, acesse o repositório do [frontend](https://github.com/eliasmatheus/remember-app-web) e siga as instruções.
+
+## Testando as rotas
+
+Esta aplicação foi desenvolvida com o auxílio do [THUNDER CLIENT](https://www.thunderclient.io/), uma extensão do VSCode que permite testar as rotas da aplicação. Basta instalar o Thunder Client as rotas serão automaticamente importadas da pasta `thunder-tests` para o Thunder Client.
+
+Para testar, clique no ícone do Thunder Client na barra lateral do VSCode clique na aba `Collections` para ver as rotas disponíveis. Clique em uma rota para abri-la e clique no botão `Send Request` para enviar a requisição.
